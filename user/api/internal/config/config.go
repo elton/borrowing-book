@@ -11,4 +11,8 @@ type Config struct {
 		Datasource string
 	}
 	CacheRedis cache.ClusterConf
+	Auth       struct {
+		AccessSecret string
+		AccessExpire int64
+	}
 }
